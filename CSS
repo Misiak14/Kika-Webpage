@@ -1,0 +1,413 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Slideshowshomepage
+-----------------------------------------------------*/
+.slideshow{
+  filter: brightness(100%);
+  height: 100vh;
+  width: 100vw;
+  background: url(1.jpg);
+  background-size: cover;
+  animation: slide 28s infinite;
+}
+
+@-webkit-keyframes slide {
+	25% {
+		background: url('https://usacarssk.files.wordpress.com/2019/07/2.jpg');
+		background-size: cover;
+	}
+
+50% {
+	background: url('https://usacarssk.files.wordpress.com/2019/07/3-1.jpg');
+	background-size: cover;
+}
+
+75% {
+	background: url('https://usacarssk.files.wordpress.com/2019/07/4.jpg');
+	background-size: cover;
+}	
+}
+@keyframes slide {
+  25% { background: url(2.jpg);background-size: cover;}
+  50% {background: url(3.jpg);background-size: cover;}
+  75% {background: url(4.jpg);background-size: cover;}
+}
+.slideshowcontent {
+	position: relative;
+	top: 50%;
+	width: 100%;
+	color: #fff;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.slideshowcontent h1{
+  font-family: monospace;
+  font-size: 5.1em;
+  letter-spacing: 1px;
+    text-align: center;
+}
+.slideshowcontent h3{
+  font-family: 'Hind', sans-serif;
+  font-size: 2em;
+    text-align: center;
+}
+
+/*homepage section1
+-----------------------------------------------------*/
+.homepagesection1 {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: #141414;
+}
+
+.homepagesection1maxwidth {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    max-width: 1920px;
+    margin: 0 auto;
+    border-top: 10px solid #d8ad08;
+}
+.homepagesection1left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 700px;
+    background-color: transparent;
+}
+
+.homepagesection1right {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 700px;
+    background-color: transparent;
+}
+
+.homepagesection1text {
+    position: relative;
+    font-family: monospace;
+    font-size: 2.7em;
+    color: #fff;
+    float: left;
+    left: 10%;
+    top: 150px;
+    width: 80%;
+    text-align: center;
+}
+.buttonhomepagesection1 {
+    width: 355px;
+    height: 50px;
+    background-color: #d8ad08;
+    font-family: 'Hind', sans-serif;
+    font-size: 3.2em;
+    color: #d8ad08;
+    position: relative;
+    text-decoration: none;
+    top: 210px;
+    float:left;
+    left: 50%;
+    transform: translate(-50%);
+    clip-path: polygon(12% 0, 100% 0%, 88% 100%, 0% 100%);
+    -webkit-clip-path: polygon(12% 0, 100% 0%, 88% 100%, 0% 100%);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 10;
+        
+   
+}
+.buttonhomepagesection1:before {
+  content: '';
+  width: 480px;
+  height: 86px;
+  -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  background: #141414;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: -1
+}
+
+.buttonhomepagesection1:hover:before {
+    background-color: #d8ad08;
+    z-index: -1;
+    transition-duration: 1s;
+}
+
+.buttonhomepagesection1:hover {
+    color: #141414;
+    z-index: 10;
+    transition-duration: 1s;
+}
+
+
+.homesection1picture {
+    width: 48vw;
+    max-width: 960px;
+    min-width: 567px;
+    height: 400px;
+    position: relative;
+    background: url(amerikan-cars.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    right: 0%;
+    top: 180px;
+}
+
+.homepagebetweensection12 {
+    width: 100%;
+    height: 170px;
+    background-color: #141414;
+    position: relative;
+}
+
+.homepagesection2 {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: #141414;
+}
+
+
+
+.homepagesection2maxwidth {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.homepagesection2right {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 700px;
+    background-color: transparent;
+}
+
+.homepagesection2left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 700px;
+    background-color: transparent;
+}
+
+.homepagesection2text {
+    position: relative;
+    font-family: monospace;
+    font-size: 2.7em;
+    color: #fff;
+    float: left;
+    left: 10%;
+    top: 150px;
+    width: 80%;
+    text-align: center;
+}
+.buttonhomepagesection2 {
+    width: 318px;
+    height: 50px;
+    background-color: #d8ad08;
+    font-family: 'Hind', sans-serif;
+    font-size: 3.2em;
+    color: #d8ad08;
+    position: relative;
+    text-decoration: none;
+    top: 210px;
+    float:left;
+    left: 50%;
+    transform: translate(-50%);
+    clip-path: polygon(12% 0, 100% 0%, 88% 100%, 0% 100%);
+    -webkit-clip-path: polygon(12% 0, 100% 0%, 88% 100%, 0% 100%);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 10;
+        
+   
+}
+.buttonhomepagesection2:before {
+  content: '';
+  width: 480px;
+  height: 86px;
+  -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  background: #141414;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: -1
+}
+
+.buttonhomepagesection2:hover:before {
+    background-color: #d8ad08;
+    z-index: -1;
+    transition-duration: 1s;
+}
+
+.buttonhomepagesection2:hover {
+    color: #141414;
+    z-index: 10;
+    transition-duration: 1s;
+}
+
+
+.homesection2picture {
+    width: 48vw;
+    max-width: 960px;
+    min-width: 567px;
+    height: 500px;
+    position: relative;
+    background: url(2019-Dodge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    left: 10%;
+    top: 180px;
+}
+
+.homepagesection2maxwidth:hover .homesection2picture {
+    background: url(so-svetlami-min.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+
+/*Homepagesections media query
+---------------------------------------------------*/
+
+@media screen and (max-width: 1180px){
+    
+    
+.homepagesection1left {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+}
+    
+.homepagesection1right {
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+}
+    
+.homepagesection1text {
+    top: 10%;
+
+}
+.buttonhomepagesection1 {
+  top:20%;
+}
+    
+.homesection1picture {
+    width: 500px;
+    max-width: 960px;
+    min-width: 567px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+ top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+    
+    
+.homepagesection2left {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+}
+    
+.homepagesection2right {
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+}
+    
+.homepagesection2text {
+    top: 10%;
+
+}
+.buttonhomepagesection2 {
+  top:20%;
+}
+    
+.homesection2picture {
+    width: 380px;
+    max-width: 960px;
+    min-width: 0px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+ top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+    
+}
+
+
+@media screen and (max-width: 510px){
+.homesection1picture {
+    width: 300px;
+    max-width: 960px;
+    min-width: 300px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+    float none;
+ top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.homepagesection1text {
+    position: relative;
+    font-family: monospace;
+    font-size: 2.3em;
+}
+.buttonhomepagesection1 {
+    font-size: 2.2em;
+    
+}
+    
+.homesection2picture {
+    width: 300px;
+    max-width: 960px;
+    min-width: 300px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+    float none;
+ top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.homepagesection2text {
+    position: relative;
+    font-family: monospace;
+    font-size: 2.3em;
+}
+.buttonhomepagesection2 {
+    font-size: 2.2em;
+    }
+}
